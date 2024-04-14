@@ -1,5 +1,4 @@
 package com.example.restobar.models;
-
 import lombok.Builder;
 import lombok.Getter;
 import javax.persistence.*;
@@ -9,7 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.*;
 @Entity
-@Table(name = "producto")
+@Table(name = "mesa")
 @Builder
 @Getter
 @Setter
@@ -17,18 +16,13 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class Producto extends Base {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "producto_id")
-    private Long id;
+public class Mesa extends Base {
+
     @Column(name = "nombre")
     private String nombre;
-    @Column(name = "descripcion")
-    private String descripcion;
-    @Column(name = "costo")
-    private String costo;
-    @Column(name = "precio")
-    private String precio;
+
+    @OneToMany
+    @JoinColumn(name = "pedido_id")
+    private Pedido pedido;
 }

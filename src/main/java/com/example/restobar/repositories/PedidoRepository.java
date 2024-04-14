@@ -1,4 +1,10 @@
 package com.example.restobar.repositories;
 
-public class PedidoRepository {
+
+import com.example.restobar.models.Pedido;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PedidoRepository extends BaseRepository<Pedido, Long> {
+
 }
