@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-@Table(name = "producto")
+@Table(name = "pedido")
 @Builder
 @Getter
 @Setter
@@ -23,9 +23,6 @@ import java.util.List;
 @ToString
 @EqualsAndHashCode
 public class Pedido extends Base{
-
-    @Column(name = "pedido_id")
-    private Integer pedidoId;
 
     @JsonFormat(pattern = "yyyy-MM-dd") //formato para utilizar json
     @Column(name = "fecha")

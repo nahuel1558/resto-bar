@@ -22,9 +22,6 @@ import jakarta.persistence.Table;
 @EqualsAndHashCode
 public class Item extends Base{
 
-    @Column(name = "item_id")
-    private Integer itemId;
-
     @Column(name = "cantidad")
     private Integer cantidad;
 
