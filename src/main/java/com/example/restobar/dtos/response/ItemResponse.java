@@ -1,4 +1,4 @@
-package com.example.restobar.dtos;
+package com.example.restobar.dtos.response;
 import lombok.Builder;
 import lombok.Data;
 
@@ -7,7 +7,7 @@ import lombok.Data;
 public class ItemResponse {
     private Long id;
     private ProductoResponse producto;
-    private Integer cantidad;
+    private Float cantidad;
     private Float precioTotal;
 
 }

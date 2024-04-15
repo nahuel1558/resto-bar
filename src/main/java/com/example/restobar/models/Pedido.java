@@ -35,6 +35,10 @@ public class Pedido extends Base{
     private Float precioTotal;
 
     @OneToMany(mappedBy = "pedido")
-    @JoinColumn(name = "producto_id")
+    @JoinColumn(name = "item_id")
     private List<Item> items;
+
+    @ManyToOne
+    @JoinColumn(name = "mesa_id")
+    private Mesa mesa;
 }

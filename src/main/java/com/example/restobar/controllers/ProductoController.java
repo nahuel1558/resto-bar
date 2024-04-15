@@ -1,22 +1,12 @@
 package com.example.restobar.controllers;
 
-import com.example.restobar.dtos.ProductoRequest;
-import com.example.restobar.dtos.ProductosResponse;
-import com.example.restobar.services.ProductoService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import com.example.restobar.models.Producto;
 import com.example.restobar.services.ProductoServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
-import javax.ws.rs.Produces;
-import java.sql.SQLException;
 @RestController
 @CrossOrigin(origins = "*")
 @Controller

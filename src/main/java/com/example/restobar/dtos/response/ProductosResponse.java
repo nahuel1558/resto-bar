@@ -1,5 +1,6 @@
-package com.example.restobar.dtos;
+package com.example.restobar.dtos.response;
 
+import com.example.restobar.dtos.response.ProductoResponse;
 import lombok.Builder;
 import lombok.Data;
 

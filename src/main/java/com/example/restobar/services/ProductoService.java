@@ -1,15 +1,7 @@
 package com.example.restobar.services;
 
-import com.example.restobar.dtos.ProductoRequest;
-import com.example.restobar.dtos.ProductosResponse;
-import com.example.restobar.mappers.ProductoMapper;
 import com.example.restobar.models.Producto;
-import com.example.restobar.repositories.ProductoRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public interface ProductoService extends BaseService<Producto, Long>{

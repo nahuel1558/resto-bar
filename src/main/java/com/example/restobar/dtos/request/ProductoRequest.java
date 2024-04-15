@@ -1,4 +1,4 @@
-package com.example.restobar.dtos;
+package com.example.restobar.dtos.request;
 
 import lombok.Data;
 

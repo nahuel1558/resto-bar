@@ -1,8 +1,8 @@
 package com.example.restobar.mappers;
 
-import com.example.restobar.dtos.ProductoRequest;
-import com.example.restobar.dtos.ProductoResponse;
-import com.example.restobar.dtos.ProductosResponse;
+import com.example.restobar.dtos.request.ProductoRequest;
+import com.example.restobar.dtos.response.ProductoResponse;
+import com.example.restobar.dtos.response.ProductosResponse;
 import com.example.restobar.models.Producto;
 import org.springframework.stereotype.Service;
 

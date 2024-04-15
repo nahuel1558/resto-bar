@@ -1,4 +1,4 @@
-package com.example.restobar.dtos;
+package com.example.restobar.dtos.response;
 
 import lombok.Builder;
 import lombok.Getter;
