@@ -22,7 +22,4 @@ public class Mesa extends Base {
     @Column(name = "nombre")
     private String nombre;
 
-    @OneToMany
-    @JoinColumn(name = "pedido_id")
-    private Pedido pedido;
 }

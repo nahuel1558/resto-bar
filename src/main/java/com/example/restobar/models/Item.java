@@ -23,7 +23,10 @@ import jakarta.persistence.Table;
 public class Item extends Base{
 
     @Column(name = "cantidad")
-    private Integer cantidad;
+    private Float cantidad;
+
+    @Column(name ="precio_total")
+    private Float precioTotal;
 
     @ManyToOne
     @JoinColumn(name = "producto_id")

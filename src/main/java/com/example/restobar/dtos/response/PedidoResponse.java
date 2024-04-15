@@ -1,5 +1,4 @@
 package com.example.restobar.dtos.response;
-import com.example.restobar.dtos.response.ItemResponse;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Data;
@@ -10,9 +9,10 @@ import java.util.List;
 @Builder
 @Data
 public class PedidoResponse {
-    private Long id;
+
+    private MesaResponse mesa;
     private String fecha;
     private List<ItemResponse> items; // Suponiendo que un pedido puede tener varios ítems
     private Float precioTotal;
-    private Long mesaId;
+
 }

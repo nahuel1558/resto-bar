@@ -19,16 +19,12 @@ import lombok.*;
 @EqualsAndHashCode
 public class Producto extends Base {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "producto_id")
-    private Long id;
     @Column(name = "nombre")
     private String nombre;
     @Column(name = "descripcion")
     private String descripcion;
     @Column(name = "costo")
-    private String costo;
+    private Float costo;
     @Column(name = "precio")
-    private String precio;
+    private Float precio;
 }

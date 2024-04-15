@@ -6,6 +6,6 @@ import lombok.Data;
 import java.util.List;
 @Builder
 @Data
-public class ProductosResponse {
-    private List<ProductoResponse> productos;
+public class MesasResponse {
+    private List<MesaResponse> mesas;
 }

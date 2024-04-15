@@ -5,7 +5,7 @@ import java.util.List;
 @Data
 public class PedidoRequest {
 
-    private Long mesaId;
+    private MesaRequest mesa;
     private List<ItemRequest> items;
 
 }

@@ -1,4 +1,8 @@
 package com.example.restobar.repositories;
 
-public class MesaRepository {
+import com.example.restobar.models.Mesa;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MesaRepository extends BaseRepository<Mesa, Long>{
 }

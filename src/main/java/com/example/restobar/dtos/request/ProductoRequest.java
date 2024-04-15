@@ -6,6 +6,6 @@ import lombok.Data;
 public class ProductoRequest {
     private String nombre;
     private String descripcion;
-    private String costo;
-    private String precio;
+    private Float costo;
+    private Float precio;
 }
