@@ -10,9 +10,9 @@ import java.util.List;
 @Data
 public class PedidoResponse {
 
+    private Long idPedido;
     private MesaResponse mesa;
     private String fecha;
     private List<ItemResponse> items; // Suponiendo que un pedido puede tener varios ítems
     private Float precioTotal;
-
 }

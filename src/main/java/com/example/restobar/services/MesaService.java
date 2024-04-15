@@ -5,4 +5,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface MesaService extends BaseService<Mesa, Long>{
+    Mesa findByName(Mesa mesa)throws Exception;
 }

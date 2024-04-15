@@ -5,5 +5,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface ItemService extends BaseService<Item, Long>{
-    Item crearItemConProducto(Long idProducto, Float cantidad) throws Exception;
+    Item crearItemConProducto(Item items) throws Exception;
 }

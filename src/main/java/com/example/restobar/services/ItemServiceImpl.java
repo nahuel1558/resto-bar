@@ -24,15 +24,17 @@ public class ItemServiceImpl extends BaseServiceImple<Item, Long>  implements It
     }
     @Override
     @Transactional
-    public Item crearItemConProducto(Long idProducto, Float cantidad) throws Exception {
+    public Item crearItemConProducto(Item items) throws Exception {
         try {
             // Buscar el producto por su ID
-            Producto producto = productoRepository.findById(idProducto)
-                    .orElseThrow(() -> new Exception("Producto no encontrado"));
-
+            float cantidad = items.getCantidad();
+            Producto producto = items.getProducto();
+            //Producto producto = productoRepository.findById(idProducto)
+                    //.orElseThrow(() -> new Exception("Producto no encontrado"));
             // Crear un nuevo ítem
             Item item = new Item();
             // Configurar el producto y la cantidad en el ítem
+
             item.setProducto(producto);
             item.setCantidad(cantidad);
             // Calcular el precio total

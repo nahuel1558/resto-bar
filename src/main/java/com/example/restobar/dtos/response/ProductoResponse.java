@@ -8,6 +8,7 @@ import lombok.Data;
 @Builder
 @Data
 public class ProductoResponse {
+    private Long idProducto;
     private String nombre;
     private String descripcion;
     private Float costo;
