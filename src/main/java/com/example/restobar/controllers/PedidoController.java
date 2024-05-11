@@ -40,13 +40,13 @@ public class PedidoController extends BaseControllerImpl<Pedido, PedidoServiceIm
     }
 */
 
-    @PostMapping("/crearPedido")
+   /* @PostMapping("/crearPedido")
     public ResponseEntity<?> crearPedidoConItem(@RequestBody PedidoRequest pedidoRequest) {
         try {
 
-            return ResponseEntity.status(HttpStatus.CREATED).body(pedidoService.crearPedidoConItem());
+            return ResponseEntity.status(HttpStatus.CREATED).body(pedidoService.crearPedidoConItem(pedidoRequest));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error al crear el pedido");
         }
-    }
+    }*/
 }

@@ -1,18 +1,36 @@
 package com.example.restobar.services;
 
+import com.example.restobar.mappers.ProductoMapper;
 import com.example.restobar.models.Producto;
+import com.example.restobar.repositories.ProductoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
 public interface ProductoService extends BaseService<Producto, Long>{
-
-    /*@Autowired
+/*
+    @Autowired
     private ProductoRepository productoRepository;
 
     @Autowired
     private ProductoMapper productoMapper;
 
-    public ResponseEntity newProducto(ProductoRequest productoRequest){
+    @Override
+    @Transactional
+    public List<Producto> findAll() throws Exception {
+        try{
+            List<Producto> productos = productoRepository.findAll();
+            return productos;
+        }catch(Exception e){
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Transactional
+    public ResponseEntity save(producto){
         Boolean existeProducto = findByNombre(productoRequest.getNombre()).isEmpty();
         if(existeProducto){
             Producto producto = productoRequestToNewProducto(productoRequest);

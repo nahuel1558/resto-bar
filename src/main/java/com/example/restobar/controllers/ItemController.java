@@ -21,12 +21,12 @@ public class ItemController extends BaseControllerImpl<Item, ItemServiceImpl>{
 
     @PostMapping("/crearItem")
     public ItemResponse crearItem(@RequestBody ItemRequest itemRequest) throws Exception {
-        // Crear el item utilizando el servicio y el objeto ItemRequest
+
         Item item = new Item();
-        // Configurar los campos del item según el request
+
         item = servicio.save(item);
 
-        // Aquí puedes retornar una respuesta con la información del item creado
+
         return new ItemResponse(item.getId(), item.getProducto(), item.getCantidad(), item.getPrecioTotal());
     }*/
 }
